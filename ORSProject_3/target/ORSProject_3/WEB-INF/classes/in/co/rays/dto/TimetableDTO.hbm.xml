@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 19 Nov, 2020 11:42:16 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+	<class name="in.co.rays.dto.TimetableDTO" table="ST_TIMETABLE">
+		 <id name="id" type="java.lang.Long">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>	
+		<property name="subId" type="java.lang.Long">
+			<column name="SUB_ID" />
+		</property>
+		<property name="courseId" type="java.lang.Long">
+			<column name="COURSE_ID" />
+		</property>
+		<property name="subName" type="java.lang.String">
+			<column name="SUBJECT_NAME" />
+		</property>
+		<property name="courseName" type="java.lang.String">
+			<column name="COURSE_NAME" />
+		</property>
+		<property name="description" type="java.lang.String">
+			<column name="DESCRIPTION" />
+		</property>
+		<property name="examDate" type="java.util.Date">
+			<column name="EXAM_DATE" />
+		</property>
+		<property name="semester" type="java.lang.String">
+			<column name="SEMESTER" />
+		</property>
+		<property name="examTime" type="java.lang.String">
+			<column name="EXAM_TIME" />
+		</property>
+		<property name="createdBy" type="java.lang.String" length="50">
+			<column name="CREATED_BY" />
+		</property>
+		<property name="modifiedBy" type="java.lang.String" length="50">
+			<column name="MODIFIED_BY" />
+		</property>
+		<property name="createdDatetime" type="java.sql.Timestamp">
+			<column name="CREATED_DATETIME" />
+		</property>
+		<property name="modifiedDatetime" type="java.sql.Timestamp">
+			<column name="MODIFIED_DATETIME" />
+		</property>
+	</class>
+</hibernate-mapping>
